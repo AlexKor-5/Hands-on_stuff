@@ -1,0 +1,22 @@
+.textBlock{
+  font-size: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #fdf5c1;
+  padding: 2em;
+  border: 5px solid grey;
+  > *{
+    display: block;
+    margin: initial;
+    font-family: Arial,sans-serif;
+    text-align: center;
+  }
+}
+.title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+.text{
+  line-height: 1.3em;
+}

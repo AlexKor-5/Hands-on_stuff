@@ -1,7 +1,13 @@
 import React from 'react'
+import { Blocks } from './components/Blocks/Blocks'
+import './normalize.scss'
 
 export function App() {
-    return <h1>app</h1>
+    return (
+        <>
+            <Blocks />
+        </>
+    )
 }
 
 export default App
