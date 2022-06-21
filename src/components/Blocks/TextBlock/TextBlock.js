@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './textBlock.module.scss'
+import classnames from 'classnames'
 
 export const TextBlock = () => {
     return (
         <>
-            <div className={styles.textBlock}>
+            <div className={classnames(styles.textBlock)}>
                 <h1 className={styles.title}>Lorem ipsum dolor sit amet.</h1>
 
                 <p className={styles.text}>
