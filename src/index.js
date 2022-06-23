@@ -1,10 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { worker } from './mocks/browser'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+if (process.env.NODE_ENV === 'development') {
+    worker.start({ onUnhandledRequest: 'bypass' }).then()
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  // <React.StrictMode>
+    // <React.StrictMode>
     <App />
-  // </React.StrictMode>
-);
+    // </React.StrictMode>
+)

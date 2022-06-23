@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './link.module.scss'
+import PropTypes from 'prop-types'
 
 const STATUS = {
     HOVERED: styles.hovered,
@@ -27,4 +28,8 @@ export const Link = ({ page, children }) => {
             {children}
         </a>
     )
+}
+Link.propTypes = {
+    page: PropTypes.string,
+    children: PropTypes.element.isRequired,
 }
