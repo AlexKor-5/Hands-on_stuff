@@ -1,0 +1,15 @@
+.block{
+  font-size: 1rem;
+  padding: 1em;
+  margin: 1em;
+  border: 2px solid black;
+  > *{
+    display: block;
+    padding: 1em;
+  }
+}
+.errorBlock{
+  font-size: 1rem;
+  border:2px solid darkred;
+  padding: 1em;
+}

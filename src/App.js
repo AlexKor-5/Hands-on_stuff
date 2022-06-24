@@ -4,7 +4,7 @@ import './scss/normalize.scss'
 import './scss/root.scss'
 import { Cube } from './components/Cube/Cube'
 import { Link } from './components/Link/Link'
-import { Fetch } from './components/Fetch/Fetch'
+import { Users } from './components/Users/Users'
 
 export function App() {
     return (
@@ -12,7 +12,7 @@ export function App() {
             {/*<Blocks />*/}
             {/*<Link>Some link!</Link>*/}
             {/*<Cube />*/}
-            <Fetch />
+            <Users />
         </>
     )
 }

@@ -1,19 +1,33 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useFetch } from '../../hocs/useFetch'
+import PropTypes from 'prop-types'
 
-export const Fetch = () => {
-    // const { data, loading, error } = useFetch('/users')
-    // if (!loading) console.log(data)
-    // if (error) console.error(error)
+export const Fetch = ({ url, renderSuccess, renderLoading, renderError }) => {
+    const { data, loading, error } = useFetch(url)
 
-    useEffect(() => {
-        fetch('/users')
-            .then((data) => data.json())
-            .then((data) => console.log(data))
-            .catch((e) => console.log(e))
-    })
+    console.log(error)
 
-    console.log('render')
-
-    return <h1>Hello Fetch</h1>
+    if (loading)
+        return typeof renderLoading === 'function'
+            ? renderLoading(loading)
+            : renderLoading
+    if (error)
+        return typeof renderError === 'function' ? renderError(error) : renderError
+    if (data)
+        return typeof renderSuccess === 'function' ? renderSuccess(data) : renderSuccess
+}
+Fetch.propTypes = {
+    url: PropTypes.string.isRequired,
+    renderSuccess: PropTypes.oneOfType([
+        PropTypes.element.isRequired,
+        PropTypes.func.isRequired,
+    ]),
+    renderLoading: PropTypes.oneOfType([
+        PropTypes.element.isRequired,
+        PropTypes.func.isRequired,
+    ]),
+    renderError: PropTypes.oneOfType([
+        PropTypes.element.isRequired,
+        PropTypes.func.isRequired,
+    ]),
 }
