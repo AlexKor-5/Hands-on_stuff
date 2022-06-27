@@ -1,4 +1,6 @@
+import React from 'react'
 import renderer from 'react-test-renderer'
+import { logRoles, render, screen } from '@testing-library/react'
 import { Link } from './Link'
 
 it('renders correctly', () => {
@@ -19,4 +21,12 @@ it('renders correctly', () => {
 
     tree = component.toJSON()
     expect(tree).toMatchSnapshot()
+})
+
+it('works great', () => {
+    const { getByText, getByRole, asFragment } = render(<Link>Link to nowhere!</Link>)
+    // const component = getByText(/Link to nowhere!/i)
+    const component = getByRole(/Link/i)
+    // console.log(component)
+    // logRoles(component)
 })

@@ -31,5 +31,8 @@ export const Link = ({ page, children }) => {
 }
 Link.propTypes = {
     page: PropTypes.string,
-    children: PropTypes.element.isRequired,
+    children: PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.element.isRequired,
+    ]),
 }

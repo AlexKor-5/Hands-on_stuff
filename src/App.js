@@ -10,9 +10,9 @@ export function App() {
     return (
         <>
             {/*<Blocks />*/}
-            {/*<Link>Some link!</Link>*/}
+            <Link>Some link!</Link>
             {/*<Cube />*/}
-            <Users />
+            {/*<Users />*/}
         </>
     )
 }
