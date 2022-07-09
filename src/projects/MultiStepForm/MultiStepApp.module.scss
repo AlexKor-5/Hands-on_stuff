@@ -1,0 +1,21 @@
+.flexWrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.centerBlock{
+  font-size: 1rem;
+  max-width: 50vw;
+  padding:2em;
+  border: 1px solid #bdbdbd;
+  box-shadow: #b6b2b2 0 0 20px;
+  border-radius: 1em;
+}
+.step{
+  > div{
+    display: block;
+  }
+}
