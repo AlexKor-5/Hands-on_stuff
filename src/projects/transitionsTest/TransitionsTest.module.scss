@@ -1,0 +1,25 @@
+.item{
+  font-size: 1rem;
+  padding:1em;
+  margin: 1em;
+  border:2px solid #5a965d;
+  background-color: #9fbe16;
+  color:whitesmoke;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  span{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, serif;
+    &:first-letter{
+      text-transform: uppercase;
+    }
+  }
+  button{
+    padding:1em;
+    cursor: pointer;
+  }
+}
+

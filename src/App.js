@@ -8,6 +8,7 @@ import { Users } from './components/Users/Users'
 import { FlexBoxes } from './components/FlexBoxes/FlexBoxes'
 import { FlexPage } from './components/FlexPage/FlexPage'
 import { MultiStepApp } from './projects/MultiStepForm/MultiStepApp'
+import { TransitionsTest } from './projects/transitionsTest/transitionsTest'
 
 export function App() {
     return (
@@ -18,7 +19,8 @@ export function App() {
             {/*<Users />*/}
             {/*<FlexBoxes />*/}
             {/*<FlexPage />*/}
-            <MultiStepApp />
+            {/*<MultiStepApp />*/}
+            <TransitionsTest />
         </>
     )
 }
