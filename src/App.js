@@ -9,6 +9,7 @@ import { FlexBoxes } from './components/FlexBoxes/FlexBoxes'
 import { FlexPage } from './components/FlexPage/FlexPage'
 import { MultiStepApp } from './projects/MultiStepForm/MultiStepApp'
 import { TransitionsTest } from './projects/transitionsTest/transitionsTest'
+import { AppModal } from './projects/Modal/AppModal'
 
 export function App() {
     return (
@@ -20,7 +21,8 @@ export function App() {
             {/*<FlexBoxes />*/}
             {/*<FlexPage />*/}
             {/*<MultiStepApp />*/}
-            <TransitionsTest />
+            {/*<TransitionsTest />*/}
+            <AppModal />
         </>
     )
 }
