@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom/client'
-import PropTypes from 'prop-types'
 import { Modal } from './components/Modal'
 
 export const AppModal = () => {
