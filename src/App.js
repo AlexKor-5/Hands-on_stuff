@@ -11,7 +11,7 @@ import { MultiStepApp } from './projects/MultiStepForm/MultiStepApp'
 import { TransitionsTest } from './projects/transitionsTest/transitionsTest'
 import { AppModal } from './projects/Modal/AppModal'
 import { TransitionComp } from './projects/TransitionComp/TransitionComp'
-import { AppPagination } from './projects/AppPagination/AppPagination'
+import { PaginationApp } from './projects/Pagination/PaginationApp'
 
 export function App() {
     return (
@@ -25,10 +25,10 @@ export function App() {
             {/*<MultiStepApp />*/}
             {/*<TransitionsTest />*/}
             {/*Modal Window---------------------------------------*/}
-            <AppModal />
+            {/*<AppModal />*/}
             {/*<TransitionComp />*/}
             {/* // Modal Window---------------------------------------*/}
-            {/*<AppPagination />*/}
+            <PaginationApp />
         </>
     )
 }
